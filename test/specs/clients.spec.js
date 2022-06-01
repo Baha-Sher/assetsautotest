@@ -12,7 +12,7 @@ describe('Clients page', () => {
         browser.reloadSession();
     })
 
-    it('should add client', () => {   
+    xit('should add client', () => {   
         ClientsPage.clickOnAddClientButton();
         browser.pause(2000);
         ClientsPage.enterFirstname("Bahatest1");
@@ -33,11 +33,9 @@ describe('Clients page', () => {
     it('should filter client', () => {
         ClientsPage.filterClick();
         ClientsPage.clickQaSkillInFilter();
-        browser.key
+        //browser.key
         browser.saveScreenshot('./test/result/screenAssests.png')
         browser.pause(3000);
-
-
 
         
     })
